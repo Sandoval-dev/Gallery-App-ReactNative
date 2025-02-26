@@ -5,7 +5,7 @@ import Routes from './src/routes'
 export class App extends Component {
   render() {
     return (
-      <SafeAreaView style={{flex: 1, backgroundColor:'white'}}>
+      <SafeAreaView style={{flex: 1,}}>
         <Routes/>
       </SafeAreaView>
     )
