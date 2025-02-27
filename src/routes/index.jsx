@@ -6,12 +6,14 @@ import Home from '../screens/Home';
 import Login from '../screens/Login';
 import Register from '../screens/Register';
 import Splash from '../screens/Splash';
+import { navigationRef } from '../NavigationService';
 
 const Stack = createNativeStackNavigator();
+
 export class Routes extends Component {
     render() {
         return (
-            <NavigationContainer>
+            <NavigationContainer ref={navigationRef}>
                 <Stack.Navigator initialRouteName='Splash' screenOptions={({ route, navigation }) => {
                     return {
                         headerShown: false
